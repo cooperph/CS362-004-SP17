@@ -51,8 +51,6 @@ int main()
     
     printf("--------------Testing Function: %s--------------\n", TESTFUNCTION);
     
-    G.hand[0][0] = adventurer;
-    printf("\ncard cost: %d\n", getCost( G.hand[0][0] ));
     G.coins = 6;
     
     //TEST 1: No buy rounds left

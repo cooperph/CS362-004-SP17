@@ -1340,16 +1340,15 @@ void playSmithy(struct gameState *state, int currentPlayer, int handPos)
     {
         drawCard(currentPlayer, state);
     }
-    //discard card from hand
-    discardCard(handPos, currentPlayer, state, 0);
 }
 
 void playVillage(struct gameState *state, int currentPlayer, int handPos)
 {
     //+1 Card
     drawCard(currentPlayer, state);
+    drawCard(currentPlayer, state);
     //+2 Actions
-    state->numActions = state->numActions + 2;
+    state->numActions = state->numActions + 1;
 
     //discard played card from hand
     discardCard(handPos, currentPlayer, state, 0);
@@ -1364,7 +1363,7 @@ void playGreatHall(struct gameState *state, int currentPlayer, int handPos)
     state->numActions++;
 
     //discard card from hand
-    discardCard(handPos, currentPlayer, state, 0);
+    discardCard(0, currentPlayer, state, 0);
 }
 
 void playCutpurse( struct gameState *state, int currentPlayer, int handPos)

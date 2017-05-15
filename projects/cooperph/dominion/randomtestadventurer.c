@@ -30,7 +30,7 @@ int main()
     int numPlayers = 2;
     int thisPlayer = 0;
     int seed;
-    int numRuns = 10000;
+    int numRuns = 100000;
     int i;
     int count;
     int maxHandSize = 10, minHandSize = 5;
@@ -115,7 +115,7 @@ printf("\nTEST NUMBER: %d", i+1);
                 tempFail++;
             }
         }
-                
+        
         //no change to coins
         if(G.coins != testG.coins)
         {

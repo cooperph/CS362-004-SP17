@@ -1,0 +1,163 @@
+--------------Testing Card: Village--------------
+TEST 1: current players gets 1 card
+Original Hand Size: 5
+New Hand Size: 6
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 2: current players deck size
+Original Draw Pile Size: 5
+New Draw Pile Size: 4
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 3: Current Players Card Discarded
+Original Hand Size: 5
+New Hand Size: 5
+	TEST SUCCESSFULLY COMPLETED
+
+Test 4: Current Player gets 2 additional actions
+
+Original action count: 1
+New action cound: 4
+	TEST FAILED
+
+TEST 5: No State Chances For Other Players
+
+Hand Size: Player 1
+Original Hand Size: 0
+New Hand Size: 1
+	TEST FAILED
+
+Deck Size: Player 1
+Original Draw Pile Size: 10
+New Draw Pile Size: 10
+	TEST SUCCESSFULLY COMPLETED
+
+Discard Size: Player 1
+Original Discard Size: 0
+New Discard Size: 0
+	TEST SUCCESSFULLY COMPLETED
+
+Player 1
+	TEST FAILED
+
+
+No State Changes to Other Players
+	TEST FAILED
+
+TEST 6: No Changes to Victory Cards
+
+Victory Cards Original Count: 24
+ Victory Cards New Count24
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 7: No Changes to Kingdom Card Piles
+KC Count: 98
+New KC Count: 98
+	TEST SUCCESSFULLY COMPLETED
+
+Passed Tests: 5:7
+
+>>>>> FAILURE: Testing Complete Village <<<<<
+--------------Testing Card: Smithy--------------
+TEST 1: current players gets 3 cards
+Original Hand Size: 5
+New Hand Size: 8
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 2: current players deck size
+Original Draw Pile Size: 5
+New Draw Pile Size: 2
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 3: Current Players Card Discarded
+Original Hand Size: 5
+New Hand Size: 7
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 4: No State Chances For Other Players
+
+Hand Size: Player 1
+Original Hand Size: 0
+New Hand Size: 1
+	TEST FAILED
+
+Deck Size: Player 1
+Original Draw Pile Size: 10
+New Draw Pile Size: 10
+	TEST SUCCESSFULLY COMPLETED
+
+Discard Size: Player 1
+Original Discard Size: 0
+New Discard Size: 0
+	TEST SUCCESSFULLY COMPLETED
+
+Player 1
+	TEST FAILED
+
+
+No State Changes to Other Players
+	TEST FAILED
+
+TEST 5: No Changes to Victory Cards
+
+Victory Cards Original Count: 24
+ Victory Cards New Count24
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 6: No Changes to Kingdom Card Piles
+KC Count: 98
+New KC Count: 98
+	TEST SUCCESSFULLY COMPLETED
+
+Passed Tests: 5:6
+
+>>>>> FAILURE: Testing Complete Smithy <<<<<
+--------------Testing Card: Adventurer--------------
+TEST 1: current players gets 2 cards
+Original Hand Size: 5
+New Hand Size: -139
+	TEST FAILED
+
+TEST 2: Curent Player Updated Coins
+Original Coin Count: 4
+NewCoinCount: 0
+	TEST FAILED
+
+TEST 3: No State Chances For Other Players
+
+Hand Size: Player 1
+Original Hand Size: 0
+New Hand Size: 0
+	TEST SUCCESSFULLY COMPLETED
+
+Deck Size: Player 1
+Original Draw Pile Size: 10
+New Draw Pile Size: 10
+	TEST SUCCESSFULLY COMPLETED
+
+Discard Size: Player 1
+Original Discard Size: 0
+New Discard Size: 0
+	TEST SUCCESSFULLY COMPLETED
+
+Player 1
+	TEST SUCCESSFULLY COMPLETED
+
+
+No State Changes to Other Players
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 4: No Changes to Victory Cards
+
+Victory Cards Original Count: 24
+ Victory Cards New Count24
+	TEST SUCCESSFULLY COMPLETED
+
+TEST 5: No Changes to Kingdom Card Piles
+KC Count: 98
+New KC Count: 98
+	TEST SUCCESSFULLY COMPLETED
+
+Passed Tests: 3:5
+
+>>>>> FAILURE: Testing Complete Adventurer <<<<<

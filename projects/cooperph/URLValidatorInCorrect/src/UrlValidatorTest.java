@@ -46,6 +46,15 @@ public class UrlValidatorTest extends TestCase {
        assertTrue(urlVal.isValid("http://google.com?test=query"));
        assertFalse(urlVal.isValid("http://256.256.256.256"));
        assertTrue(urlVal.isValid("http://google.com:12345"));
+       assertTrue(urlVal.isValid("www.amazon.com"));
+       assertTrue(urlVal.isValid("http://www.amazon.com:100"));
+       assertTrue(urlVal.isValid("http://amazon.com:1000"));
+       assertTrue(urlVal.isValid("http://www.amazon.com/test   "));
+       assertTrue(urlVal.isValid("http://www.amazon.com/?a=b"));
+       assertTrue(urlVal.isValid("http://www.amazon.com/#fragtest"));
+       assertTrue(urlVal.isValid("http://255.255.255.255"));
+       assertFalse(urlVal.isValid("http://www.amazon-.com"));
+       assertFalse(urlVal.isValid("http://256.256.256.256"));
 	   
    }
    

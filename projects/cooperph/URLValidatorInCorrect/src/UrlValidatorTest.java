@@ -43,6 +43,9 @@ public class UrlValidatorTest extends TestCase {
 	   UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	   System.out.println(urlVal.isValid("http://www.amazon.com"));
 	   
+       assertTrue(urlVal.isValid("http://google.com?test=query"));
+       assertFalse(urlVal.isValid("http://256.256.256.256"));
+       assertTrue(urlVal.isValid("http://google.com:12345"));
 	   
    }
    
